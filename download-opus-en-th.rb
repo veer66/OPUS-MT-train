@@ -10,7 +10,7 @@ $URLs = %w{https://object.pouta.csc.fi/OPUS-JW300/v1/xml/en-th.xml.gz
 
 $URLs.each do |url|
   corpus_name, version, format_name, filename = url.split(/\//)[-4..-1]
-  dir_path = File.join(ENV['HOME'], 'OPUS', corpus_name + version, format_name)
+  dir_path = File.join(ENV['HOME'], 'OPUS', corpus_name + version, "latest", format_name)
   puts "mkdir -p #{dir_path}"
   `mkdir -p #{dir_path}`
   file_path = File.join(dir_path, filename)
