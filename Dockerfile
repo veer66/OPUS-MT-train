@@ -25,9 +25,9 @@ RUN cd / && \
 	   -DPROTOBUF_INCLUDE_DIR=/usr/include/google/protobuf \
 	   -DPROTOBUF_PROTOC_EXECUTABLE=/usr/bin/protoc && \
     make -j `nproc`
-#RUN cd / && \
-#    git clone --depth 1 https://github.com/veer66/mosesdecoder.git && \
-#    cd /mosesdecoder && \
-#    ./bjam -j8
+RUN cd / && \
+    git clone --depth 1 https://github.com/veer66/mosesdecoder.git && \
+    cd /mosesdecoder && \
+    ./bjam -j8
 
 
