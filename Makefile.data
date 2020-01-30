@@ -299,6 +299,7 @@ endif
 
 ## extract training data but keep some heldout data for each dataset
 add-to-local-train-and-heldout-data: ${CLEAN_TRAIN_SRC} ${CLEAN_TRAIN_TRG}
+	echo @@@ ${CLEAN_TRAIN_TRG}
 ifneq (${CLEAN_TRAIN_SRC},)
 	echo "${CLEAN_TRAIN_SRC}" >> ${dir ${LOCAL_TRAIN_SRC}}/README
 	mkdir -p ${HELDOUT_DIR}/${SRC}-${TRG}

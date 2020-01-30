@@ -125,6 +125,7 @@
 # check and adjust Makfile.env and Makfile.config
 # add specific tasks in Makefile.tasks
 
+SHELL := /bin/bash
 
 include Makefile.env
 include Makefile.config
