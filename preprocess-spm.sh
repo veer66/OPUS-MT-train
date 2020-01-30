@@ -14,8 +14,8 @@ elif [ `hostname -d` == "csc.fi" ]; then
   MOSESHOME=/proj/nlpl/software/moses/4.0-65c75ff/moses
   SPMENCODE=${APPLHOME}/marian-dev/build-spm/spm_encode
 else
-  MOSESHOME=${PWD}/mosesdecoder
-  SPMENCODE=${PWD}/marian-dev/build/spm_encode
+  MOSESHOME=/mosesdecoder
+  SPMENCODE=/marian-dev/build/spm_encode
 fi
 
 MOSESSCRIPTS=${MOSESHOME}/scripts
