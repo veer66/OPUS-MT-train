@@ -70,7 +70,7 @@ else
   CSCPROJECT   = project_2000309
   DATAHOME     = ${HOME}/work/opentrans/data/${LANGPAIR}
   WORKHOME     = ${shell realpath ${PWD}/work}
-  APPLHOME     = ${HOME}/projappl
+  APPLHOME     = /
   OPUSHOME     = /scratch/project_2000661/nlpl/data/OPUS
   MOSESHOME    = ${APPLHOME}/mosesdecoder
   EFLOMAL_HOME = ${APPLHOME}/eflomal/
