@@ -83,13 +83,14 @@ else
   LOADMODS     = echo "nothing to load"
   HPC_QUEUE    = small
   MARIAN_WORKSPACE = 30000
+  FASTALIGN_HOME = /fast_align/
 endif
 
 
-ifdef LOCAL_SCRATCH
-  TMPDIR       = ${LOCAL_SCRATCH}
-endif
-
+#ifdef LOCAL_SCRATCH
+#  TMPDIR       = ${LOCAL_SCRATCH}
+#endif
+TMPDIR = /tmp
 
 WORDALIGN    = ${EFLOMAL_HOME}align.py
 ATOOLS       = ${FASTALIGN_HOME}atools
